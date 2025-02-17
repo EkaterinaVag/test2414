@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./index.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__burger-menu burger-menu">
+        <span class="burger-menu__line"></span>
+        <span class="burger-menu__line"></span>
+        <span class="burger-menu__line"></span>
+      </div>
+      <div class="header__logo-container logo-container">
+        <img src="./imgs/header.png" alt="Logo" class="logo-container__logo" />
+      </div>
+
+      <div class="header__logo">Logo</div>
+      <nav class="header__nav">
+        <a href="#" class="header__nav-link">People nearby</a>
+        <a href="#" class="header__nav-link">Search</a>
+        <a href="#" class="header__nav-link header__nav-link--premium">
+          Premium
+          <span class="header__diamond"></span>
+        </a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <aside class="main-content__sidebar sidebar">
+        <div class="sidebar__profile">
+          <img
+            src="./imgs/foto.png"
+            alt="Profile Photo"
+            class="sidebar__photo" />
+          <div class="sidebar__profile-info">
+            <span class="sidebar__username">Test2412</span>
+            <button class="sidebar__premium-button">GET PREMIUM</button>
+          </div>
+        </div>
+
+        <div class="sidebar__line"></div>
+
+        <nav class="sidebar__menu">
+          <a href="#" class="sidebar__menu-item sidebar__menu-item--profile"
+            >Profile</a
+          >
+          <a href="#" class="sidebar__menu-item sidebar__menu-item--photos"
+            >My Photos</a
+          >
+          <a href="#" class="sidebar__menu-item sidebar__menu-item--messages"
+            >Messages</a
+          >
+          <a href="#" class="sidebar__menu-item sidebar__menu-item--favorites"
+            >Favorites</a
+          >
+          <a href="#" class="sidebar__menu-item sidebar__menu-item--guests"
+            >Guests</a
+          >
+          <a href="#" class="sidebar__menu-item sidebar__menu-item--settings"
+            >Settings</a
+          >
+          <a href="#" class="sidebar__menu-item sidebar__menu-item--logout"
+            >Log Out</a
+          >
+        </nav>
+      </aside>
+
+      <div class="main-content__inner">
+        <h1 class="main-content__title">Закончились кредиты?</h1>
+        <div class="main-content__line"></div>
+
+        <div class="main-content__timer-card timer-card">
+          <span class="timer-card__discount">Скидка 40%</span>
+          <span class="timer-card__text">Предложение действует в течение:</span>
+          <div class="timer-card__timer">
+            <span id="timer-hours">00</span>:
+            <span id="timer-minutes">10</span>:
+            <span id="timer-seconds">00</span>
+          </div>
+        </div>
+
+        <div class="swiper">
+          <div class="swiper-wrapper" id="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="offers-grid" id="offers-grid"></div>
+
+        <button class="main-content__trial-button">Try now</button>
+
+        <div class="main-content__agreement agreement">
+          <input
+            type="checkbox"
+            id="agreement-checkbox"
+            class="agreement__checkbox" />
+          <label for="agreement-checkbox" class="agreement__text">
+            By clicking Checkbox you agree and accept our
+            <a href="#" class="agreement__link">Privacy Policy</a>, and
+            <a href="#" class="agreement__link">Terms of use</a>
+          </label>
+        </div>
+
+        <img
+          src="./imgs/diamond.png"
+          alt="Diamond"
+          class="main-content__diamond" />
+
+        <div class="main-content__options options">
+          <div class="options__item options__item-text">
+            <div class="options__circle options__circle-text"></div>
+            <span class="options__text">Отправлять сообщения</span>
+          </div>
+          <div class="options__item options__item-foto">
+            <div class="options__circle options__circle-foto"></div>
+            <span class="options__text">Просматривать скрытые фото</span>
+          </div>
+          <div class="options__item options__item-gift">
+            <div class="options__circle options__circle-gift"></div>
+            <span class="options__text">Оплачивать подарки</span>
+          </div>
+          <div class="options__item options__item-premium">
+            <div class="options__circle options__circle-premium"></div>
+            <span class="options__text"
+              >Пользоваться другими премиум функциями</span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+
+    </script>
+  </body>
+</html>
