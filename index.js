@@ -33,7 +33,7 @@ const populateSlides = () => {
   offersGrid.innerHTML = '';
 
   slidesData.forEach((slide) => {
-    if (window.innerWidth <= 1024) {
+    if (window.innerWidth < 1024) {
       swiperWrapper.insertAdjacentHTML('beforeend', `<div class="swiper-slide">${createSlide(slide)}</div>`);
     } else {
       offersGrid.insertAdjacentHTML('beforeend', createSlide(slide));
@@ -44,14 +44,14 @@ const populateSlides = () => {
 const initSwiper = () => {
   populateSlides();
 
-  if (window.innerWidth <=1024 && !swiper) {
+  if (window.innerWidth < 1024 && !swiper) {
     swiper = new Swiper('.swiper', {
       loop: true,
       pagination: {
         el: '.swiper-pagination',
       },
     });
-  } else if (window.innerWidth > 1024 && swiper) {
+  } else if (window.innerWidth >= 1024 && swiper) {
     swiper.destroy();
     swiper = null;
   }
