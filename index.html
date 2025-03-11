@@ -35,7 +35,9 @@
         <a href="#" class="header__nav-link">Search</a>
         <a href="#" class="header__nav-link header__nav-link--premium">
           Premium
-          <span class="header__diamond"></span>
+          <svg class="header__diamond" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 1.5H15L19 6.5M10 1.5L13 6.5M10 1.5H5L1 6.5M10 1.5L7 6.5M19 6.5L10 16.5M19 6.5H13M10 16.5L13 6.5M10 16.5L1 6.5M10 16.5L7 6.5M13 6.5H7M1 6.5H7" stroke="#FFCF2D" stroke-width="1.5" />
+          </svg>
         </a>
       </nav>
     </header>
@@ -56,27 +58,48 @@
         <div class="sidebar__line"></div>
 
         <nav class="sidebar__menu">
-          <a href="#" class="sidebar__menu-item sidebar__menu-item--profile"
-            >Profile</a
-          >
-          <a href="#" class="sidebar__menu-item sidebar__menu-item--photos"
-            >My Photos</a
-          >
-          <a href="#" class="sidebar__menu-item sidebar__menu-item--messages"
-            >Messages</a
-          >
-          <a href="#" class="sidebar__menu-item sidebar__menu-item--favorites"
-            >Favorites</a
-          >
-          <a href="#" class="sidebar__menu-item sidebar__menu-item--guests"
-            >Guests</a
-          >
-          <a href="#" class="sidebar__menu-item sidebar__menu-item--settings"
-            >Settings</a
-          >
-          <a href="#" class="sidebar__menu-item sidebar__menu-item--logout"
-            >Log Out</a
-          >
+          <div class="sidebar__menu-item">
+            <svg width="23" height="22" viewBox="0 0 23 22">
+              <use href="img.svg#profile"></use>
+            </svg>
+            <a href="#" class="sidebar__menu-item-text">Profile</a>
+          </div>
+          <div class="sidebar__menu-item">
+            <svg width="23" height="18" viewBox="0 0 23 18">
+              <use href="img.svg#photos"></use>
+            </svg>
+            <a href="#" class="sidebar__menu-item-text">My Photos</a>
+          </div>
+          <div class="sidebar__menu-item">
+            <svg width="21" height="20" viewBox="0 0 21 20">
+              <use href="img.svg#message"></use>
+            </svg>
+            <a href="#" class="sidebar__menu-item-text">Messages</a>
+          </div>
+          <div class="sidebar__menu-item">
+            <svg width="23" height="21" viewBox="0 0 23 21">
+              <use href="img.svg#fav"></use>
+            </svg>
+            <a href="#" class="sidebar__menu-item-text">Favorites</a>
+          </div>
+          <div class="sidebar__menu-item">
+            <svg width="23" height="17" viewBox="0 0 23 17">
+              <use href="img.svg#guests"></use>
+            </svg>
+            <a href="#" class="sidebar__menu-item-text">Guests</a>
+          </div>
+          <div class="sidebar__menu-item">
+            <svg width="23" height="22" viewBox="0 0 23 22">
+              <use href="img.svg#setting"></use>
+            </svg>
+            <a href="#" class="sidebar__menu-item-text">Settings</a>
+          </div>
+          <div class="sidebar__menu-item">
+            <svg width="23" height="22" viewBox="0 0 23 22">
+              <use href="img.svg#logout"></use>
+            </svg>
+            <a href="#" class="sidebar__menu-item-text">Log Out</a>
+          </div>
         </nav>
       </aside>
 
@@ -121,22 +144,36 @@
 
           <div class="main-content__options options">
             <div class="options__item options__item-text">
-              <div class="options__circle options__circle-text"></div>
+              <div class="options__circle options__circle-text">   
+                <svg width="21" height="20" viewBox="0 0 21 20">
+                  <use href="img.svg#message"></use>
+                </svg>
+              </div>
               <span class="options__text">Отправлять сообщения</span>
             </div>
             <div class="options__item options__item-foto">
-              <div class="options__circle options__circle-foto"></div>
+              <div class="options__circle options__circle-foto">
+                <svg width="23" height="18" viewBox="0 0 23 18">
+                  <use href="img.svg#photos"></use>
+                </svg>
+              </div>
               <span class="options__text">Просматривать скрытые фото</span>
             </div>
             <div class="options__item options__item-gift">
-              <div class="options__circle options__circle-gift"></div>
+              <div class="options__circle options__circle-gift">
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                  <use href="img.svg#gift"></use>
+                </svg>
+              </div>
               <span class="options__text">Оплачивать подарки</span>
             </div>
             <div class="options__item options__item-premium">
-              <div class="options__circle options__circle-premium"></div>
-              <span class="options__text"
-                >Пользоваться другими премиум функциями</span
-              >
+              <div class="options__circle options__circle-premium">
+                <svg width="23" height="21" viewBox="0 0 23 21">
+                  <use href="img.svg#fav"></use>
+                </svg>
+              </div>
+              <span class="options__text">Пользоваться другими премиум функциями</span>
             </div>
           </div>
         </div>
