@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet">
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./styles.css" />
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./styles.css">
     <script type="module" src="./index.js" defer></script>
   </head>
   <body>
@@ -23,7 +23,10 @@
         <span class="burger-menu__line"></span>
       </div>
       <div class="header__logo-container logo-container">
-        <img src="./imgs/header.png" alt="Logo" class="logo-container__logo" />
+        <svg width="38" height="35" viewBox="0 0 38 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="38" height="35" fill="#9564AA" />
+          <path d="M19 10H24L28 15M19 10L22 15M19 10H14L10 15M19 10L16 15M28 15L19 25M28 15H22M19 25L22 15M19 25L10 15M19 25L16 15M22 15H16M10 15H16" stroke="#FFCF2D" stroke-width="1.5" />
+        </svg>
       </div>
 
       <div class="header__logo">Logo</div>
@@ -43,7 +46,7 @@
           <img
             src="./imgs/foto.png"
             alt="Profile Photo"
-            class="sidebar__photo" />
+            class="sidebar__photo">
           <div class="sidebar__profile-info">
             <span class="sidebar__username">Test2412</span>
             <button class="sidebar__premium-button">GET PREMIUM</button>
@@ -103,7 +106,7 @@
           <input
             type="checkbox"
             id="agreement-checkbox"
-            class="agreement__checkbox" />
+            class="agreement__checkbox">
           <label for="agreement-checkbox" class="agreement__text">
             By clicking Checkbox you agree and accept our
             <a href="#" class="agreement__link">Privacy Policy</a>, and
@@ -111,29 +114,30 @@
           </label>
         </div>
 
-        <img
-          src="./imgs/diamond.png"
-          alt="Diamond"
-          class="main-content__diamond" />
+        <div class="main-content__options-wrapper">
+          <svg class="main-content__diamond" viewBox="0 0 83 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M41.5 1H64L82 23.3333M41.5 1L55 23.3333M41.5 1H19L1 23.3333M41.5 1L28 23.3333M82 23.3333L41.5 68M82 23.3333H55M41.5 68L55 23.3333M41.5 68L1 23.3333M41.5 68L28 23.3333M55 23.3333H28M1 23.3333H28" stroke="#FFCF2D" stroke-width="1.5" />
+          </svg>  
 
-        <div class="main-content__options options">
-          <div class="options__item options__item-text">
-            <div class="options__circle options__circle-text"></div>
-            <span class="options__text">Отправлять сообщения</span>
-          </div>
-          <div class="options__item options__item-foto">
-            <div class="options__circle options__circle-foto"></div>
-            <span class="options__text">Просматривать скрытые фото</span>
-          </div>
-          <div class="options__item options__item-gift">
-            <div class="options__circle options__circle-gift"></div>
-            <span class="options__text">Оплачивать подарки</span>
-          </div>
-          <div class="options__item options__item-premium">
-            <div class="options__circle options__circle-premium"></div>
-            <span class="options__text"
-              >Пользоваться другими премиум функциями</span
-            >
+          <div class="main-content__options options">
+            <div class="options__item options__item-text">
+              <div class="options__circle options__circle-text"></div>
+              <span class="options__text">Отправлять сообщения</span>
+            </div>
+            <div class="options__item options__item-foto">
+              <div class="options__circle options__circle-foto"></div>
+              <span class="options__text">Просматривать скрытые фото</span>
+            </div>
+            <div class="options__item options__item-gift">
+              <div class="options__circle options__circle-gift"></div>
+              <span class="options__text">Оплачивать подарки</span>
+            </div>
+            <div class="options__item options__item-premium">
+              <div class="options__circle options__circle-premium"></div>
+              <span class="options__text"
+                >Пользоваться другими премиум функциями</span
+              >
+            </div>
           </div>
         </div>
       </div>
