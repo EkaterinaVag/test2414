@@ -6,6 +6,7 @@
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
 }
 
 .header {
@@ -230,7 +231,6 @@
 
 .agreement__link {
     color: #9564AA;
-    text-decoration: none;
     font-size: inherit;
 }
 
@@ -275,6 +275,14 @@
     justify-content: center;
 }
 
+.options__item:hover .options__circle {
+    background-color: #FFCF2D;
+}
+
+.options__item:hover .options__text {
+    color: #FFCF2D;
+}
+
 .options__text {
     font-size: 0.75rem;
     font-weight: 700;
@@ -312,7 +320,6 @@
         font-size: 1rem;
         font-weight: 700;
         color: #FFFFFF;
-        text-decoration: none;
     }
 
     .header__nav-link:hover {
@@ -404,10 +411,10 @@
     }
 
     .sidebar__menu-item-text {
+        display: block;
         font-size: 1rem;
         font-weight: 400;
         color: #000000;
-        text-decoration: none;
         line-height: 22px;
     }
 
@@ -680,6 +687,11 @@
         justify-content: center;
     }
 
+    .options__circle svg {
+        height: 22px;
+        width: 22px;
+    }
+
     .options__text {
         font-size: 0.8em;
     }
@@ -704,7 +716,20 @@
         top: 80%;
     }
 
-    .options__circle:hover {
-        background-color: #FFCF2D;
+    .parallax-image {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.1s ease-out;
+        filter: blur(10px);
+        z-index: -1;
+    }
+
+    .left-image {
+        left: 0;
+    }
+
+    .right-image {
+        right: 0;
     }
 }
